@@ -8,3 +8,5 @@ def make_submission(df_columns, labels) - takes two the same length lists of col
         return the pd.DataFrame created. Used to create a
         submission frame (kaggle and others).
 
+get_sample - "returns sample of size size from  dataframe df
+
