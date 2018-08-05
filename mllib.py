@@ -1,6 +1,6 @@
 # functions
 
-from imports import *
+from .imports import *
 
 
 def display_all(df):
@@ -18,6 +18,9 @@ def make_submission(df_columns, labels):
     data = {key:val for (key, val) in zip(labels, df_columns)}
     return pd.DataFrame(data, columns=labels)
 
+def get_sample(df, size):
+    """returns sample of size size from  dataframe df"""
+    return df[:size].copy()
 
 
 
